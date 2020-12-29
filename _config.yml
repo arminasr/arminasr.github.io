@@ -34,8 +34,8 @@ github_username:  arminasr
 repository: "arminasr/arminasr.github.io"
 
 # Build settings
-#theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes"
+theme: minimal-mistakes-jekyll
+#remote_theme: "mmistakes/minimal-mistakes"
 search: true
 logo: "/assets/images/logo.jpg"
 og_image: /assets/images/logo.jpg
