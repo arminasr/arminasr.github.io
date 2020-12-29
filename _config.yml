@@ -22,7 +22,7 @@ title: Where apps become intelligent
 email: ruzgas.a@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A blog about boosting the intelligence of the iOS applications
-baseurl: "/arminasr" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arminasr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: arminas_r
 github_username:  arminasr
