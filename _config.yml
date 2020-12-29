@@ -28,7 +28,7 @@ twitter_username: arminas_r
 github_username:  arminasr
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
