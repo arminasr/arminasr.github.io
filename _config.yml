@@ -18,19 +18,52 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+locale: "en-US"
 title: Where apps become intelligent
+title_separator: "|"
+name: "Arminas Ruzgas"
 email: ruzgas.a@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog about boosting the intelligence of the iOS applications
+  A blog that shows you how to boost the intelligence of the iOS applications
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arminasr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: arminas_r
+twitter:
+  username: "arminas_r"
 github_username:  arminasr
+repository: "arminasr/arminasr.github.io"
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+search: true
+logo: "/assets/images/logo.jpg"
+og_image: /assets/images/logo.jpg
+teaser: /assets/images/teaser.jpg
 plugins:
   - jekyll-feed
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      show_date: true
+      read_time: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+  # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
+      
 
 # Exclude from processing.
 # The following items will not be processed, by default.
