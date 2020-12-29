@@ -34,12 +34,15 @@ github_username:  arminasr
 repository: "arminasr/arminasr.github.io"
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.21.0"
+remote_theme: "mmistakes/minimal-mistakes"
 search: true
 logo: "/assets/images/logo.jpg"
 og_image: /assets/images/logo.jpg
 teaser: /assets/images/teaser.jpg
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
 

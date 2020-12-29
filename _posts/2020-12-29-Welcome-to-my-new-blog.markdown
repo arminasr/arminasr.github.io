@@ -1,6 +1,7 @@
 ---
 title:  "Welcome to my new blog"
 date:   2020-12-29 06:36:33 +0200
+layout: single
 categories: jekyll update
 ---
 This is to be updated.
