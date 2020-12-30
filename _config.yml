@@ -101,25 +101,25 @@ analytics:
 author:
   name             : "Arminas Ruzgas"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "I am a software engineer specializing in iOS apps development. Since the amazing 2020 💣, I started exploring Machine Learning and I find it super interesting. The content of this blog combines both iOS & ML.
-During my spare time, I relax by actively meditating: mountain, XC biking 🚵‍♂️ or doing other sports 🏂."
+  bio              :  >- 
+   iOS Developer & ML practitioner
   location         : "Vilnius, Lithuania"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ruzgas.a@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/arminas_r"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/aruzgas/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/arminasr/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ruzgas.a@gmail.com"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -285,3 +285,10 @@ defaults:
       comments: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
