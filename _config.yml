@@ -20,7 +20,7 @@
 
 remote_theme: "mmistakes/minimal-mistakes"
 
-locale                   : "en-US"
+locale                   : "lt-LT"
 title                    : "Apps become intelligent"
 title_separator          : "|"
 subtitle                 : "With a little effort"
