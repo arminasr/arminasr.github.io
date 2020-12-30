@@ -21,16 +21,15 @@
 remote_theme: "mmistakes/minimal-mistakes"
 
 locale                   : "lt-LT"
-title                    : "Apps become intelligent"
+title                    : "Intelligent Apps"
 title_separator          : "|"
 subtitle                 : "With a little effort"
 name                     : "Arminas Ruzgas"
 description              : "A blog that shows you how to boost the intelligence of the iOS applications"
 url                      : "https://arminasr.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+#baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "arminasr/arminasr.github.io"
 teaser                   : "/assets/images/teaser.jpg"
-logo                     : "/assets/images/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -215,7 +214,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
