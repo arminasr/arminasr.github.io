@@ -59,7 +59,7 @@ Apple provides frameworks that are powered by machine learning models under the 
   Thinking about implementing speech recognition into your iOS app? Speech framework is all you need to automatically generate transcripts, alternative interpretations, and confidence levels of the results from live or prerecorded audio. Combine Speech capabilities with Natural Language and sky is the limit of what can be achieved. With the help of [Documentation of the Speech framework](https://developer.apple.com/documentation/speech) speech recognition in the iOS app will be implemented in no time.
 - Sound Analysis
 
-  [Sound Analysis framework](https://developer.apple.com/documentation/soundanalysis) is dedicated to help you analyze and clasify sound. The main power of Sound Analysis framework is utylised when you already have a custom Core ML sound classification model. Such models could be downloaded or you can train it yourself using CreateML or other technologies. 
+  [Sound Analysis framework](https://developer.apple.com/documentation/soundanalysis) is dedicated to help you analyze and clasify sound. The main power of Sound Analysis framework is utylised when you already have a custom Core ML sound classification model. Such models could be downloaded or you can train it yourself using CreateML or other technologies.
   
   Do you feel amazed when auto mechanic diagnoses the problem in your car just by listening and recognizing the specific noise coming from the the engine? Well, now we have tools to make an app that is capable of doing that.
 
@@ -81,7 +81,7 @@ There is a vast amount of already trained models that are publicly available and
 
 ### Usage of Core ML format models `.mlmodel`
 
-It is quite simple to use the models that are already in `.mlmodel` format. Let's go through the example of using `SqueezeNet Image Classification model` that classifies the dominant object in a camera frame or image. The example code is written in the Playgrounds project and [can be found here](https://URL to the playground project.com).
+It is quite simple to use the models that are already in `.mlmodel` format. Let's go through the example of using `SqueezeNet Image Classification model` that classifies the dominant object in a camera frame or image. The example code is written in the Playgrounds project and [can be found here](https://github.com/arminasr/arminasr.github.io-playgrounds/tree/master/SqueezeNetPlayground/SqueezeNetPlayground.playground).
 
 First thing that we need to do - [download](https://ml-assets.apple.com/coreml/models/Image/ObjectDetection/YOLOv3Tiny/YOLOv3Tiny.mlmodel), drag and drop the model into the project.
 ![squeezeNetInfo](/assets/images/posts/squeezeNetInfo.png)
@@ -95,8 +95,12 @@ import UIKit
 
 func getPredictions(for image: UIImage) {
     let errorMessage = "Could not predict with a given picture"
+    // 1. Initialize the SqueezeNet model
     guard let model = try? SqueezeNet(configuration: MLModelConfiguration()),
-          let buffer = image.toCVPixelBuffer(),
+          // 2. Resize image & convert to CVPixelBuffer to meet the input requirements
+          let resizedImage = image.resize(to: CGSize(width: 227, height: 227)),
+          let buffer = resizedImage.toCVPixelBuffer(),
+          // 3. Get predictions 🚀
           let predictions = try? model.prediction(image: buffer).classLabelProbs else {
         print(errorMessage)
         return
@@ -108,12 +112,17 @@ func getPredictions(for image: UIImage) {
     }
 }
 
-if let image = UIImage(named: "myCatPic.jpg")?.resize(to: CGSize(width: 227, height: 227)) {
+if let image = UIImage(named: "myCatPic.jpg") {
     getPredictions(for: image)
 }
 ```
 
-![squeezeNetInfo](/assets/images/posts/myCatPic.jpg)
+1. The SqueezeNet model is initialized by simply accesing it via model's name.
+2. SqueezeNet model expects the input of the image which size is 227 x 227px. Also it must be converted to a `CVPixelBuffer` format.
+3. Receive predictions from the model by calling `model.prediction(...)` method.
+4. Profit!
+
+![My Cat](/assets/images/posts/myCatPic.jpg)
 
 After passing the picture of my cat to the model, I learned that my cat is "tabby cat", because it has 'M' shaped marking on its forehead.
 
