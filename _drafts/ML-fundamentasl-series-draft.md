@@ -1,25 +1,32 @@
 ---
-title:  "Introduction to AI/ML for iOS, iPadOS & macOS developers"
-excerpt: "Artificial Intelligince and Machine Learning fundamentals that every iOS, iPadOS & macOS developer needs to know"
-date:   2021-01-04 15:50:00 +0200
+title:  "ML fundamentals that every iOS developer needs to know: 1/5 iOS Machine Learning Architecture & Tools"
+excerpt: "Introduction of the series about Artificial Intelligince and Machine Learning fundamentals that every iOS developer needs to know."
+date:   2021-01-10 12:00:00 +0200
 header:
-  teaser: /assets/images/new-year.jpg
-  overlay_image: /assets/images/new-year.jpg
+  teaser: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-Introduction-cover.jpg
+  overlay_image: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-Introduction-cover.jpg
+  overlay_filter: 0.3
 ---
 
-## iOS ❤️ Machine Learning
+## iOS Machine Learning Architecture & Tools
 
-Sometimes ML is perceived as a super complicated topic, requiring deep knowledge of various algorithms and math. While it is true on the academic level (to understand scientific papers one might need such knowledge), it doesn't always have to be complicated on the practical level. Our goal is to create intelligent applications, not improve the performance of the state of the art algorithms (leave this task for scientists working at Universities across the world or smart geniuses at Apple, Google, etc.). And in fact, such a goal sometimes can be achieved quite easily.
+ML fundamentals that every iOS developer needs to know: 0/5 Introduction
 
-The purpose of this article is to introduce the reader to different ways of leveraging the power of Machine Learning models in iOS apps. Let's start by understanding a high-level architecture of how Machine Learning in iOS works in general.
+ML fundamentals that every iOS developer needs to know: 1/5 iOS Machine Learning Architecture & Tools
 
-## iOS Machine Learning Architecture & tools
+ML fundamentals that every iOS developer needs to know: 2/5 Native Apple ML frameworks for iOS developers
+
+ML fundamentals that every iOS developer needs to know: 3/5 How to use a custom Core ML model in the iOS App
+
+ML fundamentals that every iOS developer needs to know: 4/5 How to convert and use (almost) any ML model in the iOS App
+
+ML fundamentals that every iOS developer needs to know: 5/5 Training ML models for the iOS App
 
 ![architecture](https://www.researchgate.net/profile/Alberto_Pacheco3/publication/324728615/figure/fig1/AS:684035428872194@1540098163253/iOS-CoreML-based-Machine-Learning-architecture.ppm)
 
 In the picture, we can see a high-level architecture of how Machine learning works natively in the iOS apps. For us, as developers, interesting parts are only Core ML and everything above it + CreateML. With knowledge of how to use these frameworks, iOS developer can call herself/himself dangerous in the iOS world of artificial intelligence.
 
-![levels](https://i.imgflip.com/4shzs9.jpg)/assets/images/new-year.jpg
+![levels](https://i.imgflip.com/4shzs9.jpg)
 
 ### Native Apple iOS frameworks powered by ML
 
@@ -124,7 +131,7 @@ if let image = UIImage(named: "myCatPic.jpg") {
 
 ![My Cat](/assets/images/posts/myCatPic.jpg)
 
-After passing the picture of my cat to the model, I learned that my cat is "tabby cat", because it has 'M' shaped marking on its forehead.
+After passing the picture of my cat to the model, I learned that my cat is a "tabby cat", because it has 'M' shaped marking on its forehead.
 
 ```
 48.4% probability: tabby, tabby cat
@@ -137,4 +144,8 @@ After passing the picture of my cat to the model, I learned that my cat is "tabb
 
 Sweet!
 
-### (Hard) Train models yourself
+Only a couple of lines of Swift code are required to make `SqueezeNet Image Classification model` work with Core ML. And in fact, most often if model is already in the `.mlmodel` format, all that is needed is to modify the input data to match the model's input requirements. But what if model that we want to use is not a Core ML format?
+
+### Converting model to the Core ML format (`.mlmodel`)
+
+### Train models yourself
