@@ -1,6 +1,6 @@
 ---
 title:  "ML fundamentals that every iOS developer needs to know: 0/5 Introduction"
-excerpt: "Introduction the the series about Artificial Intelligince and Machine Learning fundamentals that every iOS developer needs to know."
+excerpt: "Introduction of the series about Artificial Intelligince and Machine Learning fundamentals that every iOS developer needs to know."
 date:   2021-01-10 12:00:00 +0200
 header:
   teaser: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-Introduction-cover.jpg
