@@ -1,5 +1,5 @@
 ---
-title:  "ML fundamentals that every iOS developer needs to know: 1/5 iOS Machine Learning Architecture & Tools"
+title:  "Machine Learning fundamentals that every iOS developer needs to know: 3/5 How to use a custom Core ML model in the iOS App"
 excerpt: "Introduction of the series about Artificial Intelligince and Machine Learning fundamentals that every iOS developer needs to know."
 date:   2021-01-10 12:00:00 +0200
 header:
@@ -7,26 +7,11 @@ header:
   overlay_image: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-Introduction-cover.jpg
   overlay_filter: 0.3
 ---
-
-## iOS Machine Learning Architecture & Tools
-
-ML fundamentals that every iOS developer needs to know: 0/5 Introduction
-
-ML fundamentals that every iOS developer needs to know: 1/5 iOS Machine Learning Architecture & Tools
-
-ML fundamentals that every iOS developer needs to know: 2/5 Native Apple ML frameworks for iOS developers
-
 ML fundamentals that every iOS developer needs to know: 3/5 How to use a custom Core ML model in the iOS App
 
 ML fundamentals that every iOS developer needs to know: 4/5 How to convert and use (almost) any ML model in the iOS App
 
 ML fundamentals that every iOS developer needs to know: 5/5 Training ML models for the iOS App
-
-![architecture](https://www.researchgate.net/profile/Alberto_Pacheco3/publication/324728615/figure/fig1/AS:684035428872194@1540098163253/iOS-CoreML-based-Machine-Learning-architecture.ppm)
-
-In the picture, we can see a high-level architecture of how Machine learning works natively in the iOS apps. For us, as developers, interesting parts are only Core ML and everything above it + CreateML. With knowledge of how to use these frameworks, iOS developer can call herself/himself dangerous in the iOS world of artificial intelligence.
-
-![levels](https://i.imgflip.com/4shzs9.jpg)
 
 ### Native Apple iOS frameworks powered by ML
 
