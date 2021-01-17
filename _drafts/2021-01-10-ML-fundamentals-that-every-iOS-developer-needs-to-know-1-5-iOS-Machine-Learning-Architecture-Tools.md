@@ -1,7 +1,7 @@
 ---
 title:  "Machine Learning fundamentals that every iOS developer needs to know: 1/5 iOS Machine Learning Architecture & Tools"
-excerpt: "Introduction to Machine Learning Architecture & Tools for iOS development."
-date:   2021-01-12 06:00:00 +0200
+excerpt: "Introduction to Machine Learning Architecture & Tools for iOS development. Bonus - iOS Machine Learning tools Cheat-Sheet."
+date:   2021-01-17 06:00:00 +0200
 header:
   teaser: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-architecture-tools-cover.jpg
   overlay_image: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-architecture-tools-cover.jpg
