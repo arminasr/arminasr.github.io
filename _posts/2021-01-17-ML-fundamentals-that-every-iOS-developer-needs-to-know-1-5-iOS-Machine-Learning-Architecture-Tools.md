@@ -1,7 +1,8 @@
 ---
 title:  "Machine Learning fundamentals that every iOS developer needs to know: 1/5 iOS Machine Learning Architecture & Tools"
-excerpt: "Introduction to Machine Learning Architecture & Tools for iOS development. Bonus - iOS Machine Learning tools Cheat-Sheet."
+excerpt: "Introduction to Machine Learning Architecture & Tools for iOS development. Bonus - iOS Machine Learning Tools Cheat-Sheet."
 date:   2021-01-17 06:00:00 +0200
+toc: true
 header:
   teaser: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-architecture-tools-cover.jpg
   overlay_image: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-architecture-tools-cover.jpg
@@ -14,11 +15,11 @@ In this article, the most common tools for creating intelligent iOS applications
 
 ![iOS Machine Learning Architecture](/assets/images/posts/ios-ml-architecture.jpeg)
 
-In the picture, we can see a high-level architecture of how Machine Learning works natively in iOS apps. For us, as developers, interesting parts are only Core ML and everything above it + Create ML. With the knowledge of how to use these frameworks, iOS developer can implement extraordinary features. Add **Turi Create** and **coremltools** knowledge to the bag and you are quite dangerous in the iOS world of Machine Learning and Artificial Intelligence.
+In the picture, we can see a high-level architecture of how Machine Learning works natively in iOS apps. For us, as developers, interesting parts are only Core ML and everything above it + Create ML. With the knowledge of how to use these frameworks, iOS developers can implement extraordinary features. Add **Turi Create** and **coremltools** knowledge to the bag and you are quite dangerous in the iOS world of Machine Learning and Artificial Intelligence.
 
 ### Core ML
 
-Core ML framework is dedicated to accessing and running already pretrained Machine Learning models in the iOS apps with Swift language. Core ML is also a basis for Native domain-specific ML frameworks, like `Visual`, `Natural Language`, `Speech` and `Sound Analysis`. These frameworks run Machine Learning models under the hood and Core ML is at the center of this. A lot more about these frameworks will be covered in the future article **2/5 Native domain-specific Machine Learning frameworks for iOS developers**.
+Core ML framework is dedicated to accessing and running already pre-trained Machine Learning models in the iOS apps with Swift language. Core ML is also a basis for Native domain-specific ML frameworks, like `Visual`, `Natural Language`, `Speech` and `Sound Analysis`. These frameworks run Machine Learning models under the hood and Core ML is at the center of this. A lot more about these frameworks will be covered in the future article **2/5 Native domain-specific Machine Learning frameworks for iOS developers**.
 
 Besides using the previously mentioned domain-specific ML frameworks, by interacting directly with Core ML developers can run ML models [(that can be downloaded here)](https://developer.apple.com/machine-learning/models/) directly in the iOS projects. Core ML provides a consistent API to interact with any compatible `.mlmodel` model. Here are the basic steps to make the Machine Learning model work with Core ML:
 
@@ -37,7 +38,7 @@ To sum up - Core ML enables at least two powerful ways of implementing Machine L
 
 Either using native domain-specific ML-powered frameworks or running the custom ML models cover most of the cases when the iOS developer needs to interact with ML. Most often this is all that is needed to implement that super awesome feature that boosts the intelligence of the iOS application. But what if the developer's ambitions are much higher than that? What if the desired feature is so unique that no available Core ML models `.mlmodel` available on the internet fit?
 
-### Use coremltools to convert third-party Machine Learning models to Core ML format
+### Converting third-party Machine Learning models to Core ML format
 
 You might end up finding a Machine Learning model that fits the requirements and does exactly what you need, but the problem is this model is not in `.mlmodel` format. Worry no more!
 
@@ -45,7 +46,7 @@ The `coremltools` is a suite of Python scripts that is capable of converting fro
 
 We will go more in the depth on how to use `coremltools` to convert the third-party model to the `.mlmodel` format in the **5/5 How to convert and use (almost) any Machine Learning model in the iOS App** article. However, if you are in the urgent need to start using the `coremltools` ASAP - [coremltools documentation](https://coremltools.readme.io/docs/what-are-coreml-tools) is the place you want to hit first!
 
-But what if requirements for implementing a Machine Learning powered feature cannot be met by leveraging any of the already available models available on the internet? Very likely that training a custom Machine Learning model by using the unique data reflecting your app's users is what you need.
+But what if requirements for implementing a Machine Learning powered feature cannot be met by leveraging any of the already available models found on the internet? Very likely that training a custom Machine Learning model by using the unique data reflecting your app's users is what you need.
 
 ### Creating and Training custom Machine Learning models for iOS applications
 
@@ -103,8 +104,10 @@ There are many very powerful and flexible frameworks for creating and training M
 
     The more in-depth information and actual examples of using both Create ML and Turi Create tools will be covered in the **4/5 Training Machine Learning models for the iOS App with Create ML and Turi Create** article.
 
-## (Bonus) iOS Machine Learning tools Cheat-Sheet
+## (Bonus) iOS Machine Learning Tools Cheat-Sheet
 
-There are quite some tools available for implementing that cool Machine Learning powered feature. Here I provide a cheat-sheet that I believe should help to select the tools in a way that is the simplest and most efficient for iOS developers comfortable with Swift language and the Apple development world. I'd love to hear your opinion about it. Feel free to open the discussion in the comments and share what you think!
+There are quite some tools available for implementing cool Machine Learning powered features. Here I [provide a cheat-sheet](/assets/images/posts/ios-ml-tools-cheat-sheet.jpeg) that I believe should help to select the tools in a way that is the simplest and most efficient for iOS developers comfortable with Swift language and the Apple development world.
 
-![iOS Machine Learning tools cheat-sheet](/assets/images/posts/ios-ml-tools-cheat-sheet.jpeg)
+![iOS Machine Learning Tools cheat-sheet](/assets/images/posts/ios-ml-tools-cheat-sheet.jpeg)
+
+I'd love to hear your opinion about it. Feel free to open the discussion in the comments and share what you think!
