@@ -11,7 +11,7 @@ header:
 
 ## Intro
 
-In the previous article [1/5 iOS Machine Learning Architecture & Tools](/ML-fundamentals-that-every-iOS-developer-needs-to-know-1-5-iOS-Machine-Learning-Architecture-Tools){:target="_blank"} all the needed prerequisites were given so that any iOS developer using Swift language could feel comfortable with the content of this article. If you did not read it yet - I encourage you to do that.
+In the previous article [1/5 iOS Machine Learning Architecture & Tools](/ML-fundamentals-that-every-iOS-developer-needs-to-know-1-5-iOS-Machine-Learning-Architecture-Tools){:target="_blank"} all the needed prerequisites were given so that any iOS developer using Swift language could feel comfortable with the content of this article. If you did not read it yet - I encourage you to do so.
 
 In this article, four native domain-specific frameworks powered by Machine Learning models under the hood and used in the intelligent iOS applications development will be presented more in-depth. Frameworks are easy to use and in fact, one might have already used them without thinking about the complexity of Machine Learning.
 
@@ -71,7 +71,7 @@ To demonstrate how easy it is to implement Machine Learning powered features in 
 - Recognizing the speech and extracting the subscript from the audio file
 - Showing the language of the input text
 
-Let's go through the implementation of each feature. You're welcome to download the project to make it easier to follow the code [from the Github repo.](https://github.com/arminasr/IntelliNote/)
+Let's go through the implementation of each feature. You're welcome to download the project [from the Github repo.](https://github.com/arminasr/IntelliNote/) to make it easier to follow the code.
 
 ### How to detect and recognize text in images with Swift and Vision in iOS applications
 
@@ -104,7 +104,7 @@ private var textRecognitionRequest: VNRecognizeTextRequest {
 }
 ```
 
-Once we have `VNRecognizeTextRequest`, the only missing part is only creating creating `VNImageRequestHandler` which processes the previously created request.
+Once we have `VNRecognizeTextRequest`, the only missing part is creating `VNImageRequestHandler` which processes the previously created request.
 
 ```swift
 func recognizeText(in cgImage: CGImage) {
@@ -113,11 +113,11 @@ func recognizeText(in cgImage: CGImage) {
     DispatchQueue.global(qos: .userInitiated).async { [weak self] in
         guard let self = self else { return }
         
-        //2. Creating object that processes image analysis requests
+        // 2. Creating object that processes image analysis requests
         let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
         do {
             
-            //3. Performing the previously created request
+            // 3. Performing the previously created request
             try handler.perform([self.textRecognitionRequest])
         } catch {
             self.delegate?.didFailRecognizeTextFromImage()
@@ -134,13 +134,13 @@ That's it! The full implementation of [`TextRecognitionService` is in the Github
 
 ```swift
 func recognizeText(fromAudioFileWith url: URL) {
-    //1. Creating speech recognizer object
+    // 1. Creating speech recognizer object
     guard let speechRecognizer = SFSpeechRecognizer(), speechRecognizer.isAvailable else {
         delegate?.didFailRecognizeFromAudio()
         return
     }
     
-    //2. Creating and executing sppech recognition request
+    // 2. Creating and executing sppech recognition request
     let request = SFSpeechURLRecognitionRequest(url: url)
     speechRecognizer.recognitionTask(with: request) { [weak self] (result, error) in
         guard let result = result else {
@@ -148,7 +148,7 @@ func recognizeText(fromAudioFileWith url: URL) {
             return
         }
         
-        //3. Handling speech recognition results
+        // 3. Handling speech recognition results
         if result.isFinal {
             self?.delegate?.didRecogniceTextFromAudio(result.bestTranscription.formattedString)
         }
@@ -156,7 +156,7 @@ func recognizeText(fromAudioFileWith url: URL) {
 }
 ```
 
-This is all the core functionality of detecting and extracting the speech from audio files using the Speech framework. It is important to note that the user's permission for using speech recognition is mandatory before performing an actual request. The full implementation of [`SpeechRecognitionService` is in the Github repo.](https://github.com/arminasr/IntelliNote/blob/main/IntelliNote/Services/SpeechRecognitionService.swift)
+This is all the code needed to implement the feature of detecting and extracting the speech from audio files using the Speech framework. The full implementation of [`SpeechRecognitionService` is in the Github repo.](https://github.com/arminasr/IntelliNote/blob/main/IntelliNote/Services/SpeechRecognitionService.swift)
 
 ### How to identify the language of the text with Swift and Natural Language in iOS applications
 
@@ -176,4 +176,4 @@ The whole implementation of this feature is only a couple of Swift code lines, i
 
 ## Conclusion
 
-Implementation of Machine Learning powered features using domain-specific frameworks in iOS applications can be super simple. Give a shoot, spin up playgrounds in the Xcode and try it yourself. Share your results and questions in the comments!
+Implementation of Machine Learning powered features using domain-specific frameworks in iOS applications can be super simple. Give a shot, spin up playgrounds in the Xcode and try it yourself. Share your questions and results in the comments!
