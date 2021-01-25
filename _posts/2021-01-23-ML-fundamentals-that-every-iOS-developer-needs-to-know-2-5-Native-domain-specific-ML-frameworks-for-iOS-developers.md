@@ -4,7 +4,7 @@ excerpt: "Introduction to the domain specific frameworks for implementing artici
 date:   2021-01-23 06:00:00 +0200
 toc: true
 header:
-  teaser: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-architecture-tools-cover.jpg
+  teaser: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-Native-domain-specific-frameworks-cover.jpg
   overlay_image: /assets/images/posts/ML-fundamentals-that-every-iOS-developer-needs-to-know-Native-domain-specific-frameworks-cover.jpg
   overlay_filter: 0.3
 ---
