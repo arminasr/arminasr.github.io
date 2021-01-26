@@ -19,7 +19,7 @@ In the picture, we can see a high-level architecture of how Machine Learning wor
 
 ### Core ML
 
-Core ML framework is dedicated to accessing and running already pre-trained Machine Learning models in the iOS apps with Swift language. Core ML is also a basis for native domain-specific ML frameworks, like `Visual`, `Natural Language`, `Speech` and `Sound Analysis`. These frameworks run Machine Learning models under the hood and Core ML is at the center of this. A lot more about these frameworks will be covered in the future article **2/5 Native domain-specific Machine Learning frameworks for iOS developers**.
+Core ML framework is dedicated to accessing and running already pre-trained Machine Learning models in the iOS apps with Swift language. Core ML is also a basis for native domain-specific ML frameworks, like `Visual`, `Natural Language`, `Speech` and `Sound Analysis`. These frameworks run Machine Learning models under the hood and Core ML is at the center of this. A lot more about these frameworks are covered in the next article [**2/5 Native domain-specific Machine Learning frameworks for iOS developers**](/ML-fundamentals-that-every-iOS-developer-needs-to-know-2-5-Native-domain-specific-ML-frameworks-for-iOS-developers){:target="_blank"}.
 
 Besides using the previously mentioned domain-specific ML frameworks, by interacting directly with Core ML developers can run ML models [(that can be downloaded here)](https://developer.apple.com/machine-learning/models/){:target="_blank"} directly in the iOS projects. Core ML provides a consistent API to interact with any compatible `.mlmodel` model. Here are the basic steps to make the Machine Learning model work with Core ML:
 

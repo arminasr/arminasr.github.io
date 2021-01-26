@@ -14,11 +14,11 @@ Sometimes ML is perceived as a super complicated topic, requiring deep knowledge
 
 This is an introduction of the **Machine Learning fundamentals that every iOS developer needs to know** series which consists of 5 articles. Within these articles, readers will be introduced to different ways of leveraging the power of Machine Learning models in iOS app development.
 
-- 1/5 iOS Machine Learning Architecture & Tools
+- [1/5 iOS Machine Learning Architecture & Tools](/ML-fundamentals-that-every-iOS-developer-needs-to-know-1-5-iOS-Machine-Learning-Architecture-Tools){:target="_blank"}
   
   The series starts with an introduction to a high-level architecture of how Machine Learning works in iOS and helpful tools.
 
-- 2/5 Native domain-specific Machine Learning frameworks for iOS developers
+- [2/5 Native domain-specific Machine Learning frameworks for iOS developers](/ML-fundamentals-that-every-iOS-developer-needs-to-know-2-5-Native-domain-specific-ML-frameworks-for-iOS-developers){:target="_blank"}
   
   The content of the second article will dive deeper and introduce Native Apple provided domain-specific ML frameworks that help to build intelligent iOS applications.
 
