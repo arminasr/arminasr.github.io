@@ -14,4 +14,3 @@ ML fundamentals that every iOS developer needs to know: 5/5 Training ML models f
 
 ### Converting model to the Core ML format (`.mlmodel`)
 
-### Train models yourself

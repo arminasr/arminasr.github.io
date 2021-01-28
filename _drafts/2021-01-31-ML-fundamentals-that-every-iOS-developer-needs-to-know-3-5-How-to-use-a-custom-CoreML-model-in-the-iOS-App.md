@@ -1,7 +1,7 @@
 ---
 title:  "Machine Learning fundamentals that every iOS developer needs to know: 3/5 How to use a custom Core ML model in the iOS App"
 excerpt: "Learn how to run Machine Learning Models in iOS applications with Core ML."
-date:   2021-01-30 12:00:00 +0200
+date:   2021-01-31 12:00:00 +0200
 toc: true
 header:
   teaser: /assets/images/posts/custom-CoreML-model-in-the-iOS-App-cover.jpg

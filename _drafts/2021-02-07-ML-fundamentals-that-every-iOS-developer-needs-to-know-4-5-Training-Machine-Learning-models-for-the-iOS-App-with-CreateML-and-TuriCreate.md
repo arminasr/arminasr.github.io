@@ -8,10 +8,6 @@ header:
   overlay_filter: 0.3
 ---
 
-ML fundamentals that every iOS developer needs to know: 4/5 Training Machine Learning models for the iOS App with Create ML and Turi Create
-
-ML fundamentals that every iOS developer needs to know: 5/5 Training ML models for the iOS App
-
-### Converting model to the Core ML format (`.mlmodel`)
-
 ### Train models yourself
+
+
