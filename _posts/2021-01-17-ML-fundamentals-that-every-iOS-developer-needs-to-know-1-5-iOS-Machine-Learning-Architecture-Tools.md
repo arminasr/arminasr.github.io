@@ -44,7 +44,7 @@ You might end up finding a Machine Learning model that fits the requirements and
 
 The `coremltools` is a suite of Python scripts that is capable of converting from the most popular Machine Learning models created with deep learning frameworks like TensorFlow, PyTorch, Keras, Caffe as well as classical machine learning frameworks like LIBSVM, scikit-learn, and XGBoost to the `.mlmodel` format. Converting the models is only one of the functionality that `coremltools` provide. The `coremltools` also contains supporting tools for editing and validation of the models.
 
-We will go more in the depth on how to use `coremltools` to convert the third-party model to the `.mlmodel` format in the **5/5 How to convert and use (almost) any Machine Learning model in the iOS App** article. However, if you are in the urgent need to start using the `coremltools` ASAP - [coremltools documentation](https://coremltools.readme.io/docs/what-are-coreml-tools){:target="_blank"} is the place you want to hit first!
+We will go more in the depth on how to use `coremltools` to convert the third-party model to the `.mlmodel` format in the **5/5 How to run any Machine Learning model in the iOS App** article. However, if you are in the urgent need to start using the `coremltools` ASAP - [coremltools documentation](https://coremltools.readme.io/docs/what-are-coreml-tools){:target="_blank"} is the place you want to hit first!
 
 But what if requirements for implementing a Machine Learning powered feature cannot be met by leveraging any of the already available models found on the internet? Very likely that training a custom Machine Learning model by using the unique data reflecting your app's users is what you need.
 
