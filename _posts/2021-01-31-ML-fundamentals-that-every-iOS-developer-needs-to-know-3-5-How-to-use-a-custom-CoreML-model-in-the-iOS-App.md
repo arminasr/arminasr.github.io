@@ -17,23 +17,23 @@ In the previous chapter: [2/5 Native domain-specific Machine Learning frameworks
 
 There is a vast amount of already trained models that are publicly available and ready to be used. All that is needed is to find, download & integrate them in your application, simple as that 🚀. Here is the list of suggested places to look for the models:
 
-- [The official Apple website](https://developer.apple.com/machine-learning/models/) {:target="_blank"}
+- [The official Apple website](https://developer.apple.com/machine-learning/models/){:target="_blank"}
   
   Machine Learning models are already in Core ML format, (which is `.mlmodel`) and could be immediately used in your iOS application.
 
-- [Awesome Core ML Models repo](https://github.com/likedan/Awesome-CoreML-Models) {:target="_blank"}
+- [Awesome Core ML Models repo](https://github.com/likedan/Awesome-CoreML-Models){:target="_blank"}
 
 > the largest collection of Machine Learning models in Core ML format, to help iOS, macOS, tvOS, and watchOS developers experiment with machine learning techniques.
 
 ### Usage of Core ML format models `.mlmodel`
 
-It is quite simple to use the models that are already in `.mlmodel` format. Let's go through the example of using the `SqueezeNet Image Classification model` that classifies the dominant object in a camera frame or image. The example code is written in the Playgrounds project and [can be found here](https://github.com/arminasr/arminasr.github.io-playgrounds/tree/master/SqueezeNetPlayground/SqueezeNetPlayground.playground) {:target="_blank"}.
+It is quite simple to use the models that are already in `.mlmodel` format. Let's go through the example of using the `SqueezeNet Image Classification model` that classifies the dominant object in a camera frame or image. The example code is written in the Playgrounds project and [can be found here](https://github.com/arminasr/arminasr.github.io-playgrounds/tree/master/SqueezeNetPlayground/SqueezeNetPlayground.playground){:target="_blank"}.
 
-The first thing that we need to do - [download](https://ml-assets.apple.com/coreml/models/Image/ObjectDetection/YOLOv3Tiny/YOLOv3Tiny.mlmodel) {:target="_blank"}, drag and drop the model into the project.
+The first thing that we need to do - [download](https://ml-assets.apple.com/coreml/models/Image/ObjectDetection/YOLOv3Tiny/YOLOv3Tiny.mlmodel){:target="_blank"}, drag and drop the model into the project.
 ![squeezeNetInfo](/assets/images/posts/squeezeNetInfo.png)
 By selecting the imported model we immediately get some useful information about it, like what are the input and output types and interesting metadata.
 
-Besides using some `UIImage` extensions (thanks [@francoismarceau29](https://gist.github.com/francoismarceau29/abac55c22f6e440800d1d73d72bf2225#file-uiimage-cvpixelbuffer-swift) {:target="_blank"}) for formatting the image to meet input requirements, this is all the code needed to get predictions from the model:
+Besides using some `UIImage` extensions (thanks [@francoismarceau29](https://gist.github.com/francoismarceau29/abac55c22f6e440800d1d73d72bf2225#file-uiimage-cvpixelbuffer-swift){:target="_blank"}) for formatting the image to meet input requirements, this is all the code needed to get predictions from the model:
 
 ```swift
 import CoreML
