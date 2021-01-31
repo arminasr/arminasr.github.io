@@ -22,7 +22,7 @@ This is an introduction of the **Machine Learning fundamentals that every iOS de
   
   The content of the second article will dive deeper and introduce Native Apple provided domain-specific ML frameworks that help to build intelligent iOS applications.
 
-- 3/5 How to use a custom Core ML model in the iOS App
+- [3/5 How to use a custom Core ML model in the iOS App](/ML-fundamentals-that-every-iOS-developer-needs-to-know-3-5-How-to-use-a-custom-CoreML-model-in-the-iOS-App){:target="_blank"}
 
   In the third article of the series, readers will learn where to find and how to use Core ML models with Swift in iOS applications.
 

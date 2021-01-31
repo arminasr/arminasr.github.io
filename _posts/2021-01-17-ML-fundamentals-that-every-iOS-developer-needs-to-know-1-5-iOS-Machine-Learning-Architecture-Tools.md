@@ -28,7 +28,7 @@ Besides using the previously mentioned domain-specific ML frameworks, by interac
 - Provide input with a required format to the model.
 - Receive the output (prediction) from the model.
 
-More information about how to use `.mlmodel` models with Core ML will be provided in the article dedicated just for the Core ML: **3/5 How to use a custom Core ML model in the iOS App**
+More information about how to use `.mlmodel` models with Core ML will be provided in the article dedicated just for the Core ML: [**3/5 How to use a custom Core ML model in the iOS App**](/ML-fundamentals-that-every-iOS-developer-needs-to-know-3-5-How-to-use-a-custom-CoreML-model-in-the-iOS-App){:target="_blank"}
 
 To sum up - Core ML enables at least two powerful ways of implementing Machine Learning powered features:
 
