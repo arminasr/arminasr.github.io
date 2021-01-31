@@ -1,6 +1,6 @@
 ---
 title:  "Machine Learning fundamentals that every iOS developer needs to know: 3/5 How to use a custom Core ML model in the iOS App"
-excerpt: "Learn how to run Machine Learning Models in iOS applications with Core ML."
+excerpt: "Learn how to run Machine Learning Models downloaded from the internet in iOS applications with Core ML."
 date:   2021-01-31 12:00:00 +0200
 toc: true
 header:
@@ -11,29 +11,29 @@ header:
 
 ## Custom Machine Learning models in iOS apps
 
-In the previous chapter: [2/5 Native domain-specific Machine Learning frameworks for iOS developers](/ML-fundamentals-that-every-iOS-developer-needs-to-know-2-5-Native-domain-specific-ML-frameworks-for-iOS-developers) the native frameworks (provided by Apple) for creating artificially intelligent iOS applications were introduced. However, in some cases, developers might want to implement Machine Learning powered features that these frameworks do not provide. This chapter introduces how to use a custom Machine Learning model with Core ML. With this knowledge, developers will be able to take their iOS applications to the next level.
+In the previous chapter: [2/5 Native domain-specific Machine Learning frameworks for iOS developers](/ML-fundamentals-that-every-iOS-developer-needs-to-know-2-5-Native-domain-specific-ML-frameworks-for-iOS-developers){:target="_blank"} the native frameworks (provided by Apple) for creating artificially intelligent iOS applications were introduced. However, in some cases, developers might want to implement Machine Learning powered features that these frameworks do not provide. This chapter introduces how to use a custom Machine Learning model with Core ML. With this knowledge, developers will be able to take their iOS applications to the next level.
 
 ### Find, download & use already trained models
 
 There is a vast amount of already trained models that are publicly available and ready to be used. All that is needed is to find, download & integrate them in your application, simple as that 🚀. Here is the list of suggested places to look for the models:
 
-- [The official Apple website](https://developer.apple.com/machine-learning/models/)
+- [The official Apple website](https://developer.apple.com/machine-learning/models/) {:target="_blank"}
   
   Machine Learning models are already in Core ML format, (which is `.mlmodel`) and could be immediately used in your iOS application.
 
-- [Awesome Core ML Models repo](https://github.com/likedan/Awesome-CoreML-Models)
+- [Awesome Core ML Models repo](https://github.com/likedan/Awesome-CoreML-Models) {:target="_blank"}
 
 > the largest collection of Machine Learning models in Core ML format, to help iOS, macOS, tvOS, and watchOS developers experiment with machine learning techniques.
 
 ### Usage of Core ML format models `.mlmodel`
 
-It is quite simple to use the models that are already in `.mlmodel` format. Let's go through the example of using the `SqueezeNet Image Classification model` that classifies the dominant object in a camera frame or image. The example code is written in the Playgrounds project and [can be found here](https://github.com/arminasr/arminasr.github.io-playgrounds/tree/master/SqueezeNetPlayground/SqueezeNetPlayground.playground).
+It is quite simple to use the models that are already in `.mlmodel` format. Let's go through the example of using the `SqueezeNet Image Classification model` that classifies the dominant object in a camera frame or image. The example code is written in the Playgrounds project and [can be found here](https://github.com/arminasr/arminasr.github.io-playgrounds/tree/master/SqueezeNetPlayground/SqueezeNetPlayground.playground) {:target="_blank"}.
 
-The first thing that we need to do - [download](https://ml-assets.apple.com/coreml/models/Image/ObjectDetection/YOLOv3Tiny/YOLOv3Tiny.mlmodel), drag and drop the model into the project.
+The first thing that we need to do - [download](https://ml-assets.apple.com/coreml/models/Image/ObjectDetection/YOLOv3Tiny/YOLOv3Tiny.mlmodel) {:target="_blank"}, drag and drop the model into the project.
 ![squeezeNetInfo](/assets/images/posts/squeezeNetInfo.png)
 By selecting the imported model we immediately get some useful information about it, like what are the input and output types and interesting metadata.
 
-Besides using some `UIImage` extensions (thanks [@francoismarceau29](https://gist.github.com/francoismarceau29/abac55c22f6e440800d1d73d72bf2225#file-uiimage-cvpixelbuffer-swift)) for formatting the image to meet input requirements, this is all the code needed to get predictions from the model:
+Besides using some `UIImage` extensions (thanks [@francoismarceau29](https://gist.github.com/francoismarceau29/abac55c22f6e440800d1d73d72bf2225#file-uiimage-cvpixelbuffer-swift) {:target="_blank"}) for formatting the image to meet input requirements, this is all the code needed to get predictions from the model:
 
 ```swift
 import CoreML
