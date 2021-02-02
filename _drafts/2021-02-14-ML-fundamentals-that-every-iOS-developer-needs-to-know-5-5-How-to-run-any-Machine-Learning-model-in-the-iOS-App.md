@@ -2,6 +2,7 @@
 title:  "Machine Learning fundamentals that every iOS developer needs to know: 5/5 How to run any Machine Learning model in the iOS App"
 excerpt: "Introduction of the series about Artificial Intelligince and Machine Learning fundamentals that every iOS developer needs to know."
 date:   2021-01-14 12:00:00 +0200
+toc: true
 header:
   teaser: /assets/images/posts/How-to-run-any-Machine-Learning-model-in-the-iOS-App-cover.jpg
   overlay_image: /assets/images/posts/How-to-run-any-Machine-Learning-model-in-the-iOS-App-cover.jpg
