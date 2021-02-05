@@ -43,18 +43,31 @@ model_from_tf = ct.convert(tf_model)
 
 Convertion results in producing the model that can be run in the iOS app through Core ML framework as described in the previous article: [3/5 How to use a custom Core ML model in the iOS App](/ML-fundamentals-that-every-iOS-developer-needs-to-know-3-5-How-to-use-a-custom-CoreML-model-in-the-iOS-App){:target="_blank"} or via [the abstraction of Vision framework](/ML-fundamentals-that-every-iOS-developer-needs-to-know-2-5-Native-domain-specific-ML-frameworks-for-iOS-developers){:target="_blank"}.
 
-### Converting the Xception model
+#### Loading Xception example
 
-Previous convertion of the MobileNet model was quite straightforward.
+Loading MobileNet model is quite straight forward. Let's look into another example of loading a different model - [Xception](https://keras.io/api/applications/xception/){:target="_blank"}.
 
 ```python
-import coremltools as ct 
-import tensorflow as tf
-
-# Load from .h5 file
 tf_model = tf.keras.applications.Xception(weights="imagenet", 
                                           input_shape=(299, 299, 3))
-
-# Convert to Core ML
-model = ct.convert(tf_model)
 ```
+
+This model loading is a bit more complex as it requires some parameters, like `input_shape`. Before starting the conversion it is advised to read the model's documentation, from which you want to convert. Documentation should contain important information like a list of required parameters which is mandatory for loading and converting the model.
+
+## The sky is the limit
+
+Nowadays developers have enourmous advantage - comprehensive tools, extensive documentations, helpful communities and Stack Overflow. Whenever we want to implement something new, often it is enough just to look for the information on the internet and very likely that somebody has already solved a similar problem and shared their knowledge with the world.
+
+Not so long time ago Machine Learning was a buzzword, a technology, that in order to be leveraged required complex math and algoriths knowledge. While it is true on the academic level of Machine Learning, it doesn't have to be a case for a practical application of Machine Learning.
+
+As we learned in the first article of the series [1/5 iOS Machine Learning Architecture & Tools](/ML-fundamentals-that-every-iOS-developer-needs-to-know-1-5-iOS-Machine-Learning-Architecture-Tools){:target="_blank"}, many tools are available for iOS developers that help to leverage Machine Learning technologies for problem solving.
+
+In the second article [2/5 Native domain-specific Machine Learning frameworks for iOS developers](/ML-fundamentals-that-every-iOS-developer-needs-to-know-2-5-Native-domain-specific-ML-frameworks-for-iOS-developers){:target="_blank"} we digged deeper and tried the native iOS Machine Learning frameworks, which are super easy to use. Not only easy to use - these frameworks might be the only tools needed for implementing the wanted impressive Machine Learning powered feature.
+
+The functionality of these frameworks could be expanded by running the Core ML models provided by Apple or iOS community as we learned in [3/5 How to use a custom Core ML model in the iOS App](/ML-fundamentals-that-every-iOS-developer-needs-to-know-3-5-How-to-use-a-custom-CoreML-model-in-the-iOS-App){:target="_blank"} article.
+
+When such models are not available, we explored how to create and train the Machine Learning models ourselves in the [4/5 Training Machine Learning models for the iOS App with Create ML and Turi Create](ML-fundamentals-that-every-iOS-developer-needs-to-know-4-5-Training-Machine-Learning-models-for-the-iOS-App-with-CreateML-and-TuriCreate){:target="_blank"} article.
+
+Finally, in this last article of the series we learned that models created by the scientists and engineers working for the most powerful tech companies can also run in our iOS applications. While research and development of such Machine Learning models costs millions of dollars, us iOS developers, can load and run them in our iOS applications just by spending some time on converting the model.
+
+In these five articles I explained the most important tools and techniques required to be dangerous in the field of Machine Learning and iOS applications development. Future articles will contain more advanced content, like updating the already trained models with custom data. But for now, let's take a break from learning and apply what we already know. Let's build awesome applications and share them with the world!
