@@ -82,7 +82,7 @@ So, is Python and Turi Create really that scary?
 
 Ok, let's run the sound classifier Machine Learning model and see how it works in Xcode Playgrounds. It doesn't matter which model we take, either one from Create ML or Turi Create should work the same way.
 
-All the code for running the model in the Xcode Playgrounds can be found here. However, the essence of getting the result from the model is super simple.
+All the code for running the model in the Xcode Playgrounds [can be found here](https://github.com/arminasr/arminasr.github.io-playgrounds/tree/master/CatsVsDogs){:target="_blank"}. However, the essence of getting the result from the model is super simple.
 
 ```swift
 class SoundClassifierObserver: NSObject {
