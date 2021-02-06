@@ -102,7 +102,7 @@ There are many very powerful and flexible frameworks for creating and training M
 
     Besides creating and training Machine Learning models and exporting them to the Core ML format, Create ML offers other very important features. You will be surprised, but when working on Machine Learning tasks, very often most of the time is spent on working with data, not creating and training the models. Turi Create provides tools for working with data and visualizing it which is super important.
 
-    The more in-depth information and actual examples of using both Create ML and Turi Create tools will be covered in the **4/5 Training Machine Learning models for the iOS App with Create ML and Turi Create** article.
+    The more in-depth information and actual examples of using both Create ML and Turi Create tools will be covered in the [**4/5 Training Machine Learning models for the iOS App with Create ML and Turi Create**](/ML-fundamentals-that-every-iOS-developer-needs-to-know-4-5-Training-Machine-Learning-models-for-the-iOS-App-with-CreateML-and-TuriCreate){:target="_blank"} article.
 
 ## (Bonus) iOS Machine Learning Tools Cheat-Sheet
 

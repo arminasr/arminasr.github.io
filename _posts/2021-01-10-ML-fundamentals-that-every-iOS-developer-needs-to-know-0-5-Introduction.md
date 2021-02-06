@@ -26,7 +26,7 @@ This is an introduction of the **Machine Learning fundamentals that every iOS de
 
   In the third article of the series, readers will learn where to find and how to use Core ML models with Swift in iOS applications.
 
-- 4/5 Training Machine Learning models for the iOS App with Create ML and Turi Create
+- [4/5 Training Machine Learning models for the iOS App with Create ML and Turi Create](/ML-fundamentals-that-every-iOS-developer-needs-to-know-4-5-Training-Machine-Learning-models-for-the-iOS-App-with-CreateML-and-TuriCreate){:target="_blank"}
 
   The fourth article presents tools for creating and training the unique Machine Learning models for the iOS project yourself.
 
