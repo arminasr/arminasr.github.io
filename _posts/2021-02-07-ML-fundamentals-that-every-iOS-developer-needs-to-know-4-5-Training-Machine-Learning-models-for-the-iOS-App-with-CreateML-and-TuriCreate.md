@@ -1,7 +1,7 @@
 ---
 title:  "Machine Learning fundamentals that every iOS developer needs to know: 4/5 Training Machine Learning models for the iOS App with Create ML and Turi Create"
 excerpt: "Learn to train Machine Learning model for iOS app with Create ML and Turi Create"
-date:   2021-01-07 12:00:00 +0200
+date:   2021-02-07 12:00:00 +0200
 toc: true
 header:
   teaser: /assets/images/posts/Training-Machine-Learning-models-for-the-iOS-App-with-CreateML-and-TuriCreate-cover.jpg
