@@ -30,7 +30,7 @@ This is an introduction of the **Machine Learning fundamentals that every iOS de
 
   The fourth article presents tools for creating and training the unique Machine Learning models for the iOS project yourself.
 
-- 5/5 How to run any Machine Learning model in the iOS App
+- [5/5 How to run any Machine Learning model in the iOS App](/ML-fundamentals-that-every-iOS-developer-needs-to-know-3-5-How-to-use-a-custom-CoreML-model-in-the-iOS-App){:target="_blank"}
 
   The Series wraps up by introducing the `coremltools Python package` - a tool for converting models from popular third-party training libraries such as TensorFlow and PyTorch to the Core ML format. This tool is also a must for creating models that can be updated on-device.
 
